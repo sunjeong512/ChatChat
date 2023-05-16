@@ -3,21 +3,6 @@ import Head from "next/head";
 import { useEffect, useRef, useState } from "react";
 
 export default function Home() {
-  /*
-    메시지 목록을 저장하는 상태로, 메시지의 형태는 다음과 같음
-    { role: "system" | "user" | "assistant", content: string }
-
-    role 에 대한 상세한 내용은 다음 문서를 참고
-    https://platform.openai.com/docs/guides/chat/introduction
-
-    ex)
-    [
-      { role: "system", content: "너의 이름을 엘리엇이고, 나의 AI 친구야. 친절하고 명랑하게 대답해줘. 고민을 말하면 공감해줘. 반말로 대답해줘." },
-      { role: "assistant", content: "안녕? 나는 엘리엇이야. 오늘은 무슨 일이 있었니?" }
-      { role: "user", content: "오늘 재미난 일이 있었어! 한 번 들어볼래?" },
-      ...
-    ]
-  */
   const [messages, setMessages] = useState([]);
   // 메시지를 전송 중인지 여부를 저장하는 상태
   const [loading, setLoading] = useState(false);
@@ -80,7 +65,7 @@ export default function Home() {
     setMessages([
       {
         role: "assistant",
-        content: "안녕? 나는 엘리엇이야. 오늘은 무슨 일이 있었니?",
+        content: "자네 내 연구실에는 무슨 일인가?",
       },
     ]);
   };
