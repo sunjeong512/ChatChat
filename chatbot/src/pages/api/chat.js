@@ -26,10 +26,7 @@ export default async (req, res) => {
   // POST 로 전송받은 내용 중 messages 를 추출
   const { messages } = req.body;
 
-  // console.log([
-  //   { role: "system", content: systemPrompt },
-  //   ...messages.slice(-6),
-  // ]);
+  console.log([...messages]);
 
   // API Reference: https://platform.openai.com/docs/api-reference/chat/create
   const completion = await openai.createChatCompletion({
@@ -49,7 +46,7 @@ export default async (req, res) => {
     ],
   });
 
-  // console.log(completion.data.choices[0].message);
+  console.log(completion.data.choices[0].message);
 
   res.status(200).json({
     // AI 의 답변은 assistant 역할로 전송
