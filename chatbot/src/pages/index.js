@@ -83,7 +83,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>A Simple Chatbot</title>
+        <title>교수연구실</title>
         <meta name="description" content="A Simple Chatbot" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -91,12 +91,12 @@ export default function Home() {
 
       <div className="flex flex-col h-screen">
         <div className="flex h-[50px] sm:h-[60px] border-b border-neutral-300 py-2 px-2 sm:px-8 items-center justify-between">
-          <div className="font-bold text-3xl flex text-center">
+          <div className="font-normal">
             <a
-              className="ml-2 hover:opacity-50"
+              className="flex-initial text-align:center hover:opacity-50"
               href="https://code-scaffold.vercel.app"
             >
-              A Simple Chatbot
+              서울대학교 222동 1004호
             </a>
           </div>
         </div>
