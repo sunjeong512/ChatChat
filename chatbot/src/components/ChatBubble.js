@@ -10,7 +10,7 @@ export const ChatBubble = ({ message }) => {
           className={`flex items-center ${
             message.role === "assistant"
               ? "rounded-3xl bg-neutral-200 text-neutral-900"
-              : "rounded-3xl bg-[#a3e635] text-white"
+              : "rounded-3xl bg-[#84cc16]/80 text-white"
           } rounded-2xl px-3 py-2 max-w-[67%] whitespace-pre-wrap`}
           style={{ overflowWrap: "anywhere" }}
         >
